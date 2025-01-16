@@ -4,17 +4,17 @@ function carregar() {
     var data = new Date()
     var hora = data.getHours()
     var minutos = data.getMinutes()
-    mmsg.innerHTML = `Agora são ${hora} horas e ${minutos} minutos.`
+    msg.innerHTML = `Agora são ${hora} horas e ${minutos} minutos.`
     if (hora >= 0 && hora < 12) {
-        // BOM DIA
+       alert('Bom dia!')
         img.src = './images/manha.png'
         document.body.style.background = '#E0FFFF'
     } else if (hora >= 12 && hora < 18) {
-        // BOA TARDE
+        alert('Boa tarde!')
         img.src = './images/tarde/.png'
         document.body.style.background = '#DEB887'
     } else {
-        //BOA NOITE
+        alert('Boa noite!')
         img.src = './images/noite.png'
         document.body.style.background = '#191970'
     }
